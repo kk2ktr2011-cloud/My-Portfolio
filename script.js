@@ -6,6 +6,6 @@ document.getElementById('message');
 
 button.addEventListener("click", function(){
     message.textContent = 
-    "Hello! JavaScript is working.";
+    "Welcome to my first webpage!";
 })
 

@@ -1,34 +1,95 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Webpage</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+  <nav class="navbar">
+    <h2 class="logo">My Portfolio</h2>
 
-    <h1>Welcome to My First Webpage</h1>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
 
+    <button id="themeButton">Dark Mode</button>
+  </nav>
+
+  <header id="home" class="hero">
+    <h1>Hello, I'm Keshav Korattur</h1>
+    <p>I am learning web development with Choicest Fruit.</p>
+    <button id="helloButton">Say Hello</button>
+    <p id="message"></p>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
     <p>
-      My name is Keshav Korattur
-      I am learning web development through the
-      Choicest Fruit Internship program.
+      My name is Keshav Korattur and I am a high school student with a passion for technology and programming.
+      Previously, I have learned how to code in Python, and I have been certified by OpenEDG.
+      Currently, I am learning how to build websites using HTML, CSS, and JavaScript.
+      I also create many projects in Python for fun as well; these will be linked below.
     </p>
-    <button id="helloButton">
-      Say Hello!
-    </button>
+  </section>
 
-    <p id="message"> </p>
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
 
-    <script src="script.js"></script>
+    <div class="card-container">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Git</div>
+      <div class="card">Python</div>
+      <div class="card">GitHub</div>
+    </div>
+  </section>
 
-  </body>
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
 
-  <img
-  src="Images\images.jpeg"
-  alt="My Image">
+    <div class="card-container">
+      <div class="project-card">
+        <h3>First Webpage</h3>
+        <p>A simple webpage built with HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </div>
 
-  <a href = "https://github.com/kk2ktr2011-cloud">
-    Visit My Github Profile
-  </a>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my skills and projects.</p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>A Game of Rolling Dice</h3>
+        <p>A program for a simple dice-rolling game that allows the user to compete against the computer. </p>
+        <p>
+        <a href="https://github.com/kk2ktr2011-cloud/DiceRollingGame" target="_blank">View Project</a>
+        </p>      
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: kk2ktr2011@gmail.com</p>
+    <p>
+      <a href="https://github.com/kk2ktr2011-cloud" target="_blank">Visit My GitHub</a>
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 My Portfolio | Built during Choicest Fruit SYEP Internship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

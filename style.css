@@ -101,7 +101,7 @@ button:hover {
 }
 
 button:hover {
-  background-color: orange;
+  background-color: orangered;
 }
 
 .profile-container img {
@@ -115,7 +115,9 @@ button:hover {
   margin-left: -250px; 
 }
 
-img { border: 2px solid white; }
+img { 
+  border: 2px solid white;
+}
 
 .MissionStatement {
   text-align: center;

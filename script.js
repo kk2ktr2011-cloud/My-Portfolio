@@ -17,4 +17,14 @@ themeButton.addEventListener("click", function () {
   }
 });
 
+const resumeButton = document.getElementById("resumeButton");
+
+resumeButton.addEventListener("click", function () {
+  const link = document.createElement("a");
+  link.href = "resume.pdf";
+  link.download = "Keshav's_Resume.pdf";
+  link.click();
+});
+
+
 

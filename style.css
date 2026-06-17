@@ -118,4 +118,10 @@ button:hover {
 .MissionStatement {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: aquamarine;
+  padding: 80px 20px;
+}
+
+.dark .MissionStatement {
+  background-color: dimgrey;
 }

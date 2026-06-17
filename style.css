@@ -108,12 +108,14 @@ button:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: cover; 
 }
 
 .profile-container {
   margin-left: -250px; 
 }
+
+img { border: 2px solid white; }
 
 .MissionStatement {
   text-align: center;

@@ -25,3 +25,25 @@ resumeButton.addEventListener("click", function () {
   link.download = "Keshav's_Resume.pdf";
   link.click();
 });
+
+const cards = document.querySelectorAll('.testimonial');
+let current = 0;
+
+setInterval(() => {
+  cards[current].hidden = true;
+  current = (current + 1) % cards.length;
+  cards[current].hidden = false;
+}, 5000);
+
+const roles = [
+  "Future Software Engineer",
+  "Future Hardware Engineer",
+];
+
+let current_role = 0;
+const role = document.getElementById("role");
+
+setInterval(()=>{
+  current_role = (current_role + 1) % roles.length;
+  role.textContent = roles[current_role]
+}, 2000);

@@ -82,7 +82,7 @@ button:hover {
 
 /* Dark mode */
 .dark {
-  background-color: white;
+  background-color: lightgray;
   color: white;
 }
 

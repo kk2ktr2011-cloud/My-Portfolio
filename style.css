@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
-  background-color: #f4f4f4;
+  background-color: rgb(181 186 208);
   color: #222;
 }
 
@@ -9,8 +9,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: navy;
-  color: white;
+  background: rgb(65, 103, 136);
+  color: black;
   padding: 15px 30px;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   margin: 0 10px;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 button {
-  background: orange;
+  background: rgb(115 137 174);
   color: black;
   border: none;
   padding: 10px 16px;
@@ -38,13 +38,13 @@ button {
 }
 
 button:hover {
-  background: gold;
+  background: #ae9873;
 }
 
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: lightblue;
+  background: rgb(129 210 199);
 }
 
 .section {
@@ -61,7 +61,7 @@ button:hover {
 
 .card,
 .project-card {
-  background: white;
+  background: rgb(129 210 199);
   padding: 25px;
   width: 220px;
   border-radius: 10px;
@@ -69,20 +69,20 @@ button:hover {
 }
 
 .project-card a {
-  color: navy;
+  color: rgb(65, 103, 136);
   font-weight: bold;
 }
 
 .footer {
   text-align: center;
-  background: navy;
-  color: white;
+  background: rgb(65, 103, 136);
+  color: black;
   padding: 20px;
 }
 
 /* Dark mode */
 .dark {
-  background-color: #111;
+  background-color: white;
   color: white;
 }
 
@@ -115,14 +115,10 @@ button:hover {
   margin-left: -250px; 
 }
 
-img { 
-  border: 2px solid white;
-}
-
 .MissionStatement {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: aquamarine;
+  background-color: rgb(245 100 118);
   padding: 80px 20px;
 }
 

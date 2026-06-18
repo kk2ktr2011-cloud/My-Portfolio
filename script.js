@@ -25,6 +25,3 @@ resumeButton.addEventListener("click", function () {
   link.download = "Keshav's_Resume.pdf";
   link.click();
 });
-
-
-

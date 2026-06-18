@@ -47,3 +47,15 @@ setInterval(()=>{
   current_role = (current_role + 1) % roles.length;
   role.textContent = roles[current_role]
 }, 2000);
+
+let count = localStorage.getItem("visits");
+
+if (!count) {
+  count = 0;
+}
+
+count = Number(count) + 1;
+
+localStorage.setItem("visits", count);
+
+document.getElementById("count").textContent = count;

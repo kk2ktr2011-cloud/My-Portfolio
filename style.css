@@ -1,178 +1,250 @@
+/* ---------- Global ---------- */
+
 body {
   margin: 0;
-  font-family: Verdana, sans-serif;
-  background-color: rgb(181 186 208);
-  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef4f7;
+  color: #2d3748;
+  line-height: 1.6;
 }
+
+/* ---------- Navigation ---------- */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(65, 103, 136);
-  color: black;
-  padding: 15px 30px;
+  background: #2c6e91;
+  color: white;
+  padding: 18px 40px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 
 .logo {
   margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .nav-links a {
-  color: black;
+  color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin-left: 20px;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #ffd166;
 }
 
+/* ---------- Buttons ---------- */
+
 button {
-  background: rgb(115 137 174);
-  color: black;
+  background: #4caf50;
+  color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 12px 22px;
+  border-radius: 8px;
   cursor: pointer;
-  border-radius: 6px;
+  font-size: 15px;
+  transition: all .3s ease;
 }
 
 button:hover {
-  background: orangered;
+  background: #43a047;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,.2);
 }
+
+/* ---------- Hero ---------- */
 
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: rgb(129 210 199);
+  padding: 100px 20px;
+  background: linear-gradient(135deg,#81d2c7,#5eb6b3);
+  color: white;
 }
 
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* ---------- Sections ---------- */
+
 .section {
-  padding: 50px 30px;
+  padding: 70px 30px;
   text-align: center;
 }
+
+.section h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* ---------- Cards ---------- */
 
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
 .card,
 .project-card {
-  background: rgb(129 210 199);
-  padding: 25px;
-  width: 220px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px gray;
+  background: white;
+  width: 250px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  transition: all .3s ease;
+}
+
+.card:hover,
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.18);
 }
 
 .project-card a {
-  color: rgb(65, 103, 136);
+  color: #2c6e91;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.footer {
+.project-card a:hover {
+  color: #4caf50;
+}
+
+/* ---------- Mission ---------- */
+
+.MissionStatement {
   text-align: center;
-  background: rgb(65, 103, 136);
-  color: black;
-  padding: 20px;
-}
-
-/* Dark mode */
-.dark {
-  background-color: black;
+  padding: 80px 20px;
+  background: linear-gradient(135deg,#ff758c,#ff7eb3);
   color: white;
 }
 
-.dark .hero {
-  background-color: #333;
+.MissionStatement h2 {
+  font-size: 2rem;
 }
 
-.dark .card,
-.dark .project-card {
-  background-color: #222;
-  color: white;
+.MissionStatement p {
+  max-width: 700px;
+  margin: auto;
 }
 
-.dark .project-card a {
-  color: orange;
+/* ---------- Testimonials ---------- */
+
+.testimonial {
+  margin: 20px auto;
+  padding: 25px;
+  background: white;
+  width: 260px;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  transition: .3s;
 }
 
-.profile-container img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover; 
+.testimonial:hover {
+  transform: scale(1.05);
 }
+
+/* ---------- Profile ---------- */
 
 .profile-container {
-  margin-left: 0;
   display: flex;
   justify-content: center;
 }
 
-.MissionStatement {
+.profile-container img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  background: #2c6e91;
+  color: white;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(245 100 118);
-  padding: 80px 20px;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+/* ---------- Dark Mode ---------- */
+
+.dark {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+.dark .navbar,
+.dark .footer {
+  background: #1f1f1f;
+}
+
+.dark .hero {
+  background: linear-gradient(135deg,#333,#222);
 }
 
 .dark .MissionStatement {
-  background-color: dimgrey;
+  background: linear-gradient(135deg,#444,#2e2e2e);
 }
 
-.testimonial {
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgb(129 210 199);
-  height: 100px;
-  width: 200px;
-  box-shadow: 2px 2px 10px gray;
-}
-
+.dark .card,
+.dark .project-card,
 .dark .testimonial {
-  background-color: #333;
+  background: #222;
+  color: white;
 }
+
+.dark .project-card a {
+  color: #64b5f6;
+}
+
+/* ---------- Mobile ---------- */
 
 @media (max-width: 600px) {
 
   .navbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
   }
 
   .nav-links {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-  }
-
-  .profile-container {
-    margin-left: 0;
+    gap: 10px;
   }
 
   .hero {
-    padding: 40px 15px;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
   }
 
   .card,
-  .project-card {
-    width: 90%;
-  }
-
+  .project-card,
   .testimonial {
     width: 90%;
-    height: auto;
   }
 
   button {
     width: 100%;
-    margin-top: 10px;
   }
 }
